@@ -13,6 +13,8 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         User adminOne = new User("Kareem Emad", "S-12038");
-        User adminTwo = new User("Omar Magdy", "C-10038");
+        User adminTwo = new User("Omar Magdyy", "C-10038");
+        User adminThree = new User("Omar Magdy", "C-130038");
+
     }
 }
