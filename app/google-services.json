@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "145959745355",
+    "firebase_url": "https://lastone-6bf87-default-rtdb.firebaseio.com",
+    "project_id": "lastone-6bf87",
+    "storage_bucket": "lastone-6bf87.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:145959745355:android:4d82359d14efff54235ace",
+        "android_client_info": {
+          "package_name": "com.example.onlight_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "145959745355-nlqufoon43jjiuh4mbagn9et7larop97.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAKHMQbEicKw8Vos7vKYlhMwBtvSMyw2E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "145959745355-nlqufoon43jjiuh4mbagn9et7larop97.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+>
+    <include
+        android:id="@+id/toolbar_monitor_activity"
+        layout="@layout/toolbar_monitor_activity" />
+    <LinearLayout
+        android:layout_below="@+id/toolbar_monitor_activity"
+        android:id="@+id/monitor_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="6dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/compound_street"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="@font/janna"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_below="@+id/monitor_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MonitorActivity"
+        android:orientation="vertical"
+        android:id="@+id/mainScroll"
+        android:scrollbars="none"
+        android:backgroundTintMode="screen"
+    >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:background="#F0EDD4"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/group_one_lamp_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/off_light_right"/>
+
+                    <ImageView
+                        android:id="@+id/group_one_lamp_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:rotationY="180"
+                        android:src="@drawable/off_light_right"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:background="#E6FFFD"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/group_two_lamp_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/off_light_right"/>
+
+                    <ImageView
+                        android:id="@+id/group_two_lamp_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:rotationY="180"
+                        android:src="@drawable/off_light_right"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal"
+              >
+                <LinearLayout
+                    android:background="#F0EDD4"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/group_one_lamp_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/off_light_right"/>
+
+                    <ImageView
+                        android:id="@+id/group_one_lamp_four"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:rotationY="180"
+                        android:src="@drawable/off_light_right"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:background="#E6FFFD"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/group_two_lamp_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/off_light_right"/>
+
+                    <ImageView
+                        android:id="@+id/group_two_lamp_four"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:rotationY="180"
+                        android:src="@drawable/off_light_right"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:background="#F0EDD4"
+
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/group_one_lamp_five"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/off_light_right"/>
+
+                    <ImageView
+                        android:id="@+id/group_one_lamp_six"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:rotationY="180"
+                        android:src="@drawable/off_light_right"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:background="#E6FFFD"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/group_two_lamp_five"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/off_light_right"/>
+
+                    <ImageView
+                        android:id="@+id/group_two_lamp_six"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:rotationY="180"
+                        android:src="@drawable/off_light_right"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:background="#F0EDD4"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/group_one_lamp_seven"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/off_light_right"/>
+
+                    <ImageView
+                        android:id="@+id/group_one_lamp_eight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:rotationY="180"
+                        android:src="@drawable/off_light_right"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:background="#E6FFFD"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/group_two_lamp_seven"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/off_light_right"/>
+
+                    <ImageView
+                        android:id="@+id/group_two_lamp_eight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:rotationY="180"
+                        android:src="@drawable/off_light_right"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:background="#E6FFFD"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/group_three_lamp_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/off_light_right"/>
+
+                    <ImageView
+                        android:id="@+id/group_three_lamp_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:rotationY="180"
+                        android:src="@drawable/off_light_right"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:background="#F0EDD4"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/group_four_lamp_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/off_light_right"/>
+
+                    <ImageView
+                        android:id="@+id/group_four_lamp_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:rotationY="180"
+                        android:src="@drawable/off_light_right"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal"
+              >
+                <LinearLayout
+                    android:background="#E6FFFD"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/group_three_lamp_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/off_light_right"/>
+
+                    <ImageView
+                        android:id="@+id/group_three_lamp_four"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:rotationY="180"
+                        android:src="@drawable/off_light_right"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:background="#F0EDD4"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/group_four_lamp_three"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/off_light_right"/>
+
+                    <ImageView
+                        android:id="@+id/group_four_lamp_four"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:rotationY="180"
+                        android:src="@drawable/off_light_right"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal"
+               >
+                <LinearLayout
+                    android:background="#E6FFFD"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/group_three_lamp_five"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/off_light_right"/>
+
+                    <ImageView
+                        android:id="@+id/group_three_lamp_six"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:rotationY="180"
+                        android:src="@drawable/off_light_right"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:background="#F0EDD4"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/group_four_lamp_five"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/off_light_right"/>
+
+                    <ImageView
+                        android:id="@+id/group_four_lamp_six"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:rotationY="180"
+                        android:src="@drawable/off_light_right"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal"
+              >
+                <LinearLayout
+                    android:background="#E6FFFD"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/group_three_lamp_seven"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/off_light_right"/>
+
+                    <ImageView
+                        android:id="@+id/group_three_lamp_eight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:rotationY="180"
+                        android:src="@drawable/off_light_right"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:background="#F0EDD4"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/group_four_lamp_seven"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/off_light_right"/>
+
+                    <ImageView
+                        android:id="@+id/group_four_lamp_eight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:rotationY="180"
+                        android:src="@drawable/off_light_right"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

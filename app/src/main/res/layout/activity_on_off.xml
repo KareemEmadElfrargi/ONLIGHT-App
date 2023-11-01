@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/gradient_background_activity"
+tools:context=".OnOffActivity">
+<include
+    android:id="@+id/toolbar_OnOff"
+    layout="@layout/toolbar_off_on_activity"/>
+<LinearLayout
+    android:id="@+id/OnOff_container_on_off"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_margin="10dp"
+    android:layout_below="@+id/toolbar_OnOff"
+    android:layout_marginTop="15dp">
+    <Switch
+        android:id="@+id/OnOff_onAndOF_switch"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:padding="10dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/janna"
+        android:textSize="20dp"
+        android:textColor="@color/basic_color_font_level1"
+        android:textAlignment="textEnd"
+        android:text="@string/off"
+        android:layoutDirection="rtl"
+        android:checked="false"
+        android:theme="@style/SCBSwitch"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/on_off_container3_ll"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_below="@+id/OnOff_container_on_off"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginStart="10dp">
+
+    <TextView
+        android:id="@+id/OnOff_title_tv"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:padding="10dp"
+        android:textStyle="italic"
+        android:fontFamily="@font/cairo_bold"
+        android:background="@drawable/text_style_one"
+        android:text="@string/turning_lights_houses_on_off_just_one_click"
+        android:textAlignment="center"
+        android:drawableStart="@drawable/ic_information"
+        android:drawablePadding="10dp"
+        android:visibility="visible"
+        tools:ignore="Suspicious0dp"/>
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_on_off_one_i"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lottie_rawRes="@raw/home_lighting"
+        app:lottie_autoPlay="true"
+        android:visibility="gone"
+        app:lottie_loop="true"/>
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_on_off_two_wait"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lottie_rawRes="@raw/wait_icon"
+        app:lottie_autoPlay="true"
+        android:visibility="visible"
+        app:lottie_loop="true"/>
+</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/SynchronizationActivity_rl"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <include
+        android:id="@+id/toolbar_sync"
+        layout="@layout/toolbar_synchronization_activity"/>
+    <RelativeLayout
+        android:layout_below="@+id/toolbar_sync"
+        android:id="@+id/animationContainer_house1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true">
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_monitor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:lottie_loop="true"
+            android:visibility="visible"
+            app:lottie_rawRes="@raw/monitoring_house" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_below="@+id/animationContainer_house1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SynchronizationActivity"
+        android:orientation="vertical"
+        android:id="@+id/mainScroll2"
+        android:scrollbars="none"
+        android:backgroundTintMode="screen"
+        android:layout_marginBottom="15dp"
+
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/animationContainer_house"
+                android:id="@+id/house_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/round_background_homes_basic"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/home_One_IV"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="2dp"
+                    android:src="@drawable/home_of" />
+
+                <TextView
+                    android:id="@+id/ownerHouseOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/home_One_IV"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/house_s_kareem_emad"
+                    android:fontFamily="@font/janna"
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/descriptionHouseOne"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/home_One_IV"
+                    android:fontFamily="@font/ciaro_light"
+                    android:layout_below="@id/ownerHouseOne"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/dark_mode"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/house_two"
+                android:layout_below="@+id/house_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/round_background_homes_basic"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/home_Two_IV"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/home_of" />
+
+                <TextView
+                    android:id="@+id/ownerHouseTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/home_Two_IV"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/house_s_mohamed_hamza"
+                    android:fontFamily="@font/janna"
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/descriptionHouseTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/home_Two_IV"
+                    android:layout_below="@id/ownerHouseTwo"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/ciaro_light"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/dark_mode"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/house_three"
+                android:layout_below="@+id/house_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:padding="16dp"
+                android:background="@drawable/round_background_homes_basic"
+                tools:ignore="ExtraText">
+
+                <ImageView
+                    android:id="@+id/home_three_IV"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/home_of" />
+
+                <TextView
+                    android:id="@+id/ownerHouseThree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/home_three_IV"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/house_s_amira_ibrahim"
+                    android:fontFamily="@font/janna"
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/descriptionHouseThree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/home_three_IV"
+                    android:layout_below="@id/ownerHouseThree"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/ciaro_light"
+                    android:text="@string/not_available_right_now"
+                    android:textColor="@color/error"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/house_four"
+                android:layout_below="@+id/house_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:padding="16dp"
+                android:background="@drawable/round_background_homes_basic"
+                tools:ignore="ExtraText">
+
+                <ImageView
+                    android:id="@+id/home_four_IV"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/home_of" />
+
+                <TextView
+                    android:id="@+id/ownerHouseFour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/home_four_IV"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/house_s_farah_gado"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/janna"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/descriptionHouseFour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/home_four_IV"
+                    android:layout_below="@id/ownerHouseFour"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/ciaro_light"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/not_available_right_now"
+                    android:textColor="@color/error"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/house_five"
+                android:layout_below="@+id/house_four"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:padding="16dp"
+                android:background="@drawable/round_background_homes_basic"
+                tools:ignore="ExtraText">
+
+                <ImageView
+                    android:id="@+id/home_five_IV"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/home_of" />
+
+                <TextView
+                    android:id="@+id/ownerHouseFive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/home_five_IV"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/house_s_mustafa_maher"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/janna"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/descriptionHouseFive"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/home_five_IV"
+                    android:layout_below="@id/ownerHouseFive"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/ciaro_light"
+                    android:text="@string/not_available_right_now"
+                    android:textColor="@color/error"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/house_six"
+                android:layout_below="@+id/house_five"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:padding="16dp"
+                android:background="@drawable/round_background_homes_basic"
+                tools:ignore="ExtraText">
+
+                <ImageView
+                    android:id="@+id/home_six_IV"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/home_of" />
+
+                <TextView
+                    android:id="@+id/ownerHouseSix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/home_six_IV"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/house_s_omar_magdy"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/janna"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/descriptionHouseSix"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/home_six_IV"
+                    android:layout_below="@id/ownerHouseSix"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/ciaro_light"
+                    android:text="@string/not_available_right_now"
+                    android:textColor="@color/error"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

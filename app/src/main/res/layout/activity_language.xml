@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".languageActivity">
+
+<!--<androidx.appcompat.widget.Toolbar-->
+<!--    android:id="@+id/toolbar"-->
+<!--    app:titleTextColor="@color/white"-->
+<!--    app:title="@string/string_language"-->
+<!--    app:navigationIcon="@drawable/ic_arrow_back"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="?attr/actionBarSize"-->
+<!--    android:background="#000000" />-->
+    <include
+        android:id="@+id/toolbar_lang_activity"
+        layout="@layout/toolbar_language_activity" />
+
+<TextView
+    android:layout_below="@+id/toolbar_lang_activity"
+    android:id="@+id/textView3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:drawableStart="@drawable/ic_baseline_language_24"
+    android:drawablePadding="10dp"
+    android:padding="10dp"
+    />
+
+<View
+    android:id="@+id/divider"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+
+    android:background="?android:attr/listDivider" />
+
+<RadioGroup
+    android:layout_below="@+id/textView3"
+    android:id="@+id/language_radioGroup"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:layout_height="match_parent" >
+
+    <RadioButton
+        android:id="@+id/radioButton_arabic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/janna"
+        android:buttonTint="@color/fateh_yellow"
+        android:text="@string/string_arabic_value" />
+
+    <RadioButton
+        android:id="@+id/radioButton_english"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/janna"
+        android:text="@string/string_english_value" />
+</RadioGroup>
+</RelativeLayout>

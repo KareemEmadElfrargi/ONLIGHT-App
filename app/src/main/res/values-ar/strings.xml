@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">االأضاءة الذكية</string>
+    <string name="on_light_dashboard">لوحة التحكم</string>
+    <string name="feature_one">الطاقة الشمسية</string>
+    <string name="feature_two">التحكم في المنازل</string>
+    <string name="feature_three">مراقبة الشوارع</string>
+    <string name="feature_four">فحص الاعطال</string>
+    <string name="feature_five">متابعة المنازل</string>
+    <string name="feature_six">الاعدادات</string>
+    <string name="sign_up_title" translatable="false">تسجيل دخول</string>
+
+    <string name="next_btn" translatable="false">التالي</string>
+    <string name="login_tx">التسجيل</string>
+    <string name="admin_login">االتسجيل كـمسؤول</string>
+    <string name="manger_name">اسم العامل</string>
+    <string name="drawer_open">فتح الدرج</string>
+    <string name="drawer_close">غلق الدرج</string>
+    <string name="id_manager">بطاقة العامل</string>
+    <string name="synchronization">تتبع</string>
+    <string name="off">غلق</string>
+    <string name="on">فتح</string>
+    <string name="on_modify">فتح</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="string_settings">الاعدادات</string>
+    <string name="string_editProfile">تعديل الملف الشخصي</string>
+    <string name="string_mode">الوضع</string>
+    <string name="string_language">اللغة</string>
+    <string name="string_logout">تسجيل الخروج</string>
+    <string name="string_deleteAccount">حذف الحساب</string>
+    <string name="string_personName">اسم العامل</string>
+    <string name="string_hint_yourName">الاسم</string>
+    <string name="string_hint_password">البطاقة الشخصية</string>
+    <string name="string_hint_phoneNumber">الهاتف</string>
+    <string name="string_hint_city">المدينة</string>
+    <string name="string_btn_save">حفظ</string>
+    <string name="string_arabic_value">العربية</string>
+    <string name="string_english_value">الانجليزية</string>
+    <string name="string_darkMode_value">الوضع الليلي</string>
+    <string name="string_description_modeActivity">الوضع النهاري ( افتراضي )</string>
+    <string name="monitoring_streets">مراقبة الشوارع</string>
+    <string name="dash_board">لوحة التحكم</string>
+    <string name="house_s_kareem_emad">منزل كريم عماد</string>
+    <string name="dark_mode">المنزل مظُلم</string>
+    <string name="light_mode">المنزل مضئ</string>
+    <string name="house_s_mohamed_hamza">منزل محمد حمزة</string>
+    <string name="not_available_right_now">ليس متوفر حاليا!</string>
+    <string name="house_s_amira_ibrahim">منزل اميرة ابراهيم</string>
+    <string name="house_s_farah_gado">منزل فرح جادو</string>
+    <string name="house_s_mustafa_maher">منزل مصطفي ماهر</string>
+    <string name="house_s_omar_magdy">منزل عمر مجدي</string>
+    <string name="compound_street">شارع الحي</string>
+    <string name="settings">Settings</string>
+    <string name="log_out">Log Out</string>
+    <string name="current_off">انقطاع التيار</string>
+    <string name="turning_lights_houses_on_off_just_one_click">فتح وغلق جميع المنازل</string>
+</resources>

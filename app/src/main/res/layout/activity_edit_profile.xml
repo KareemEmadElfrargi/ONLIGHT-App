@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+
+tools:context=".editProfileActivity" >
+
+<androidx.appcompat.widget.Toolbar
+    android:id="@+id/toolbar"
+    app:titleTextColor="@color/white"
+    app:navigationIcon="@drawable/ic_arrow_back"
+    android:layout_width="match_parent"
+    app:title="@string/string_editProfile"
+    android:layout_height="?attr/actionBarSize"
+    android:background="#000000" />
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:background="@drawable/gradient_list"
+    android:layout_weight="1"
+    android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageViewPro"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_profile_social_svgrepo_com" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewPro"
+        android:layout_weight="1"
+        android:text="@string/string_personName"
+        android:fontFamily="@font/janna"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="#050505"
+        android:textSize="24dp" />
+
+</RelativeLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:paddingTop="30dp"
+    android:layout_weight="4"
+    android:background="@color/colorBackground"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:orientation="vertical">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editTextTextPersonName"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/string_hint_yourName"
+        android:textColorHint="#95a5a6"
+        app:boxBackgroundColor="#F6F1F1"
+        app:boxStrokeColor="@color/dark_yellow"
+        app:placeholderText=""
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerCircle"
+        app:startIconDrawable="@drawable/ic_name_icon"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:inputType="text"
+            android:fontFamily="@font/cairo_bold"
+            android:textSize="15sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editTextTextPersonPass"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/string_hint_password"
+        android:enabled="false"
+        android:textColorHint="#95a5a6"
+        app:boxBackgroundColor="#F6F1F1"
+        app:boxStrokeColor="@color/dark_yellow"
+        app:endIconMode="password_toggle"
+        app:placeholderText=""
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerCircle"
+        app:startIconDrawable="@drawable/ic_baseline_password_24"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/cairo_bold"
+
+            android:inputType="textPassword"
+
+            android:textSize="15sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editTextTextPersonPhone"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/string_hint_phoneNumber"
+        android:textColorHint="#95a5a6"
+        app:boxBackgroundColor="#F6F1F1"
+        app:boxStrokeColor="@color/dark_yellow"
+
+        app:placeholderText=""
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerCircle"
+        app:startIconDrawable="@drawable/ic_phone_icon"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:inputType="number"
+            android:fontFamily="@font/cairo_bold"
+
+            android:textSize="15sp"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editTextTextCity"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/string_hint_city"
+        android:textColorHint="#95a5a6"
+        app:boxBackgroundColor="#F6F1F1"
+        app:boxStrokeColor="@color/dark_yellow"
+
+        app:placeholderText=""
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerCircle"
+        app:startIconDrawable="@drawable/ic_home_icon_silhouette_svgrepo_com"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:inputType="text"
+            android:textSize="15sp"
+            android:fontFamily="@font/cairo_bold"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back"
+        android:text="@string/string_btn_save"
+
+        android:textAllCaps="false"
+        android:textSize="15sp"
+
+        />
+
+</LinearLayout>
+
+
+</LinearLayout>
